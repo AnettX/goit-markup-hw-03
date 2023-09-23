@@ -38,16 +38,17 @@ img {
 /*  ------------------------------------------------ */
 
 .container {
-  width: 1440px;
-  padding-left: 156px;
-  padding-right: 156px;
+  width: 1158px;
+  padding: 0 15px;
   margin: 0 auto;
   /* outline: 2px solid red; */
 }
 
 .header {
+  width: 17;
   padding-top: 24px;
   padding-bottom: 24px;
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .header .container {
@@ -68,12 +69,13 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  margin-right: 76px;
 }
 
 .header-navigation {
   display: flex;
   flex-grow: 1;
-  justify-content: space-between;
+  align-items: center;
 }
 
 .header-menu {
@@ -91,6 +93,7 @@ img {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding: 24px 0;
 }
 
 .header-soc-list {
@@ -115,12 +118,11 @@ img {
 
 .head {
   color: #ffffff;
-  padding-bottom: 120px;
 }
 
 .head-container {
   background-color: var(--NAVY-BLUE, #2e2f42);
-  padding: 188px 472px;
+  padding: 188px 0;
 }
 
 .head-title {
@@ -130,7 +132,10 @@ img {
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 0.02em;
+  max-width: 496px;
+  margin: 0 auto;
   margin-bottom: 48px;
+  text-align: center;
 }
 
 .head-order-btn {
@@ -146,6 +151,7 @@ img {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   border: none;
   padding: 16px 32px;
+  min-width: 169px;
 }
 
 .head-order-btn:hover,
@@ -173,8 +179,8 @@ img {
   overflow: hidden;
 }
 
-.benefits {
-  padding-bottom: 120px;
+.benefits .container {
+  padding: 120px 0;
 }
 
 .benefits-list {
@@ -198,23 +204,23 @@ img {
 /* =================== Section 3 - Our team ====================== */
 
 .team {
+  width: 100%;
+  background-color: var(--CLOUD, #f4f4fd);
+  padding: 120px 0;
 }
 
-.team-container {
-  background-color: var(--CLOUD, #f4f4fd);
-  padding-top: 120px;
-  padding-bottom: 120px;
+.team .container {
+  padding: 0 0;
 }
 
 .team-title {
-  color: var(--NAVY-BLUE, #2e2f42);
   text-align: center;
   font-size: 36px;
   font-weight: 700;
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  margin-bottom: 72px;
+  padding-bottom: 72px;
 }
 
 .team-list {
@@ -223,34 +229,46 @@ img {
 }
 
 .team-img {
-  margin-bottom: 32px;
-  border-radius: 0px 0px 4px 4px;
-  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
-    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  width: 100%;
+  flex-shrink: 0;
+  margin: 0 auto;
 }
 
 .team-item {
   background-color: #ffffff;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
   width: calc((100% - 24px * 3) / 4);
-  text-align: center;
-  padding-bottom: 32px;
 }
 
 .team-subtitle {
-  color: var(--NAVY-BLUE, #2e2f42);
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
+  text-align: center;
+}
+
+.team-item .item-text {
+  text-align: center;
+}
+
+.container-item-text {
+  padding: 32px 0;
 }
 
 /* =================== Section 4 - Portfolio ====================== */
 
 .portfolio {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding: 120px 0;
+}
+
+.portfolio .container {
+  padding-right: 0;
+  padding-left: 0;
 }
 
 .portfolio-title {
@@ -272,13 +290,14 @@ img {
 }
 
 .portfolio-item {
-  border: 1px solid var(--CORNFLOWER, #e7e9fc);
   background: var(--WHITE, #fff);
-  padding-bottom: 32px;
+  border: 1px solid var(--CORNFLOWER, #e7e9fc);
   width: calc((100% - 24px * 2) / 3);
+  border-top: none;
 }
 
 .portfolio-img {
+  width: 100%;
   flex-shrink: 0;
 }
 
@@ -289,8 +308,10 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
-  padding-top: 32px;
-  padding-left: 16px;
+}
+
+.container-portfolio-text {
+  padding: 32px 32px;
 }
 
 /* =================== Section 1-4 - Style fot item-text ====================== */
@@ -299,19 +320,18 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  padding-left: 16px;
+  /* padding-left: 16px; */
 }
 
 /* =================== FOOTER ====================== */
 
 .footer {
+  background-color: #2e2f42;
 }
 
 .footer-container {
-  background-color: #2e2f42;
   padding-top: 102px;
-  padding-bottom: 100px;
-  /* margin-top: 120px; */
+  padding: 100px 0;
 }
 
 .footer-link-logo {
@@ -323,6 +343,8 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .footer-logo-text {
@@ -334,5 +356,5 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  margin-top: 18px;
+  max-width: 264px;
 }
